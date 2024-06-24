@@ -1,4 +1,6 @@
 import './App.css'
+import CharacterSearch from './Components/CharacterSearch';
+import Header from './Components/Header';
 
 const fetchCharacters = (name) => {   
   setLoading(true);
@@ -18,7 +20,8 @@ function App() {
 
   return (
     <>
-      
+      <Header />
+      <CharacterSearch />
     </>
   )
 }
