@@ -3,8 +3,6 @@ import React, { useState } from 'react';
 export default function CharacterSearch() {
   const [name, setName] = useState('');
   const [characters, setCharacters] = useState([]);
-  const [loading, setLoading] = useState(false);
-  const [error, setError] = useState(null);
   const fetchCharacters = (name) => {
     setLoading(true);
     fetch(`https://rickandmortyapi.com/api/character/?name=${name}`)
@@ -31,6 +29,7 @@ export default function CharacterSearch() {
           type="text" 
           className="campo" 
           value={name}
+          placeholder='Digite um Personagem'
           onChange={(e) => setName(e.target.value)}
         />
         <button type="submit" className="submit">

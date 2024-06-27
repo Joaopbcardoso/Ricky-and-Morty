@@ -27,7 +27,7 @@ body{
 .search{
     display: flex;
     justify-content: center;
-    margin-top: 40px;
+    margin: 70px 10px 70px;
 }
 
 .campo{
@@ -52,7 +52,7 @@ body{
 .personagem{
     display: flex;
     background-color: #131413;
-    width: 300px;
+    width: 350px;
     padding: 30px;
     color: aliceblue;
     border-radius: 10px;
